@@ -60,9 +60,9 @@ export default function Form({ onSubmit, onEdit, onClose }) {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (validate()) {
-
             onSubmit(user);
             setUser({ name: '', email: '', position: '', salary: '' });
+            setErrors({});
         }
     }
     return (
@@ -79,7 +79,8 @@ export default function Form({ onSubmit, onEdit, onClose }) {
                     <label>Position:{errors.position && <p className="error">{errors.position}</p>}</label>
                     <input type="text" name='position' value={user.position} onChange={handleChange} required />
                     
-                    <label>Salary:{errors.salary && <p className="error">{errors.salary}</p>}</label><input type="number" name='salary' value={user.salary} onChange={handleChange} required />
+                    <label>Salary:{errors.salary && <p className="error">{errors.salary}</p>}</label>
+                    <input type="number" name='salary' value={user.salary} onChange={handleChange} required />
                     
                     <button className='submit' type='submit'>Submit</button>
                 </form>

@@ -21,7 +21,8 @@ export default function EmployeeList() {
         if(isEdit){
             const edituser = {...user, id:editid.id};
             dispatch(updateuser(edituser));
-            setIsEdit(false)
+            setIsEdit(false);
+            setEditid(null);
         }
         else{
             const newuser = {...user, id:Date.now()}
@@ -30,6 +31,7 @@ export default function EmployeeList() {
         setIsEdit(false);
         setShow(false);
     }
+    
     const handleEdit=(user)=>{
         setEditid(user);
         setIsEdit(true);
