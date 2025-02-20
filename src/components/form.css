@@ -1,0 +1,113 @@
+/* .formpage{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    background-color: rgba(0,0,0,0.75);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+  
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: gray;
+  }
+  input{
+    padding:6px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+  }
+  .form .submit{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+  }
+  .form .close{
+    background-color: rgb(194, 4, 4);
+    border: none;
+    padding: 5px;
+    width: 30px;
+    color: white;
+    margin-left: auto;
+  } */
+
+
+  .formpage{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: rgb(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    width: 350px;
+    background-color: white;
+    color: rgb(102, 99, 99);
+    padding: 20px;
+    border-radius: 10px;
+
+}
+.close{
+    background-color: rgb(228, 22, 22);
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 300px;
+}
+.submit{
+    background-color: rgb(68, 131, 248);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 15px;
+   
+}
+
+label{
+    width: 100%;
+    padding: 5px;
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+}
+input{
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid rgb(231, 230, 230);
+}
+form{
+    display: flex;
+    flex-direction: column;
+
+}
+.error {
+    color: red;
+    font-size: 12px;
+    margin: 2px 0;
+}

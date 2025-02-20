@@ -1,0 +1,74 @@
+.container{
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px 3px rgb(243, 243, 243);
+    margin-top: 20px;
+    padding: 20px;
+    margin: 20px auto;
+  }
+  .add{
+    margin-right: 990px;
+    padding: 10px 15px;
+    background-color: rgb(68, 131, 248);
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+  table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  thead{
+    background-color: black;
+    color: white;
+    text-align: left;
+  }
+  th,td{
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  tbody tr:hover{
+    background-color: #f5f5f5;
+  }
+  
+  .actions{
+    display: flex;
+    gap: 5px;
+    
+  }
+  
+  .view{
+    background-color: rgb(85, 148, 230);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+  }
+  .view :hover{
+    background-color: rgb(3, 3, 151);
+  }
+  .edit{
+    background-color: rgb(66, 199, 39);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+  }
+  .edit :hover{
+    background-color: rgb(25, 163, 12);
+  }
+  .delete{
+    background-color: rgb(230, 42, 42);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+  }
+  .delete :hover{
+    background-color: rgb(194, 9, 9);
+  }
